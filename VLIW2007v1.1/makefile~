@@ -1,0 +1,11 @@
+
+.PHONY = all clean
+
+all: convert_allt8x8
+
+
+convert_allt8x8:  convert_allt8x8.cc
+	g++ -Wall $< -o $@
+
+clean:
+	rm -f *~ \#*\# *.o

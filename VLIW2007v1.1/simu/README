@@ -1,0 +1,12 @@
+Vous trouverez dans ce répertoire le simulateur et son source.
+
+Pour le compiler il faut avoir les fichiers .h de X. Débianneux et
+Ubuntophiles devront installer le paquet xorg-dev.
+
+Utilisation: 
+./simu < ../asm/deco.obj
+
+Et si vous voulez voir ce qui se passe pas à pas:
+./simu -v < ../asm/deco.obj
+
+

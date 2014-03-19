@@ -1,0 +1,27 @@
+	;r1 contient x
+	ldl16 1
+	mov r1 r0	/	nop
+	;r2 contient y
+	ldl16 3
+	mov r2 r0	/	nop
+	;r3 contient la couleur
+	ldl16 0xff
+	mov r3 r0	/	nop
+	;ici, on branche vers la fonction voulue
+	jrf plot	/	nop
+
+plot:
+	mov r9 r1	/	ldi0 3
+	and r9 r0	/	mov r6 r0
+	dec r7 r6	/	ldi0 78
+	mov r5 r0	/	mov r8 r2
+	nez p1 r5	/	add r8 r2
+	?p1 jrb 1	/	dec r5 r5
+	lsl r9 r6	/	lsr r1 r7
+        lsl r3 r9	/	add r1 r8
+
+fin:
+	str r3 r1	/	jrb fin
+
+rien:
+	jrb rien	/	nop

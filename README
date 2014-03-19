@@ -1,0 +1,7 @@
+This is a project where we designed our own ASM instructions, built a processor on FPGA and implemented a small bios.
+
+Sujet du DM: VLIW2007v1.1/sujet.pdf
+Jeu d'instruction assembleur: VLIW2007v1.1/jeu_instructions.pdf
+
+Contribution: noel.asm
+

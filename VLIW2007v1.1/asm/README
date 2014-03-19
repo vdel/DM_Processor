@@ -1,0 +1,20 @@
+Vous avez ici
+     asm.cc le code source de l'assembleur, et son Makefile
+     un exécutable qui marche sur mon Ubuntu
+     deco.asm un exemple de programme assembleur
+     deco.obj le code objet produit
+
+
+Invocation de l'assembleur:
+ asm < deco.asm > deco.obj
+
+Si vous voulez des informations sur le processus d'assemblage:
+ asm -v deco.asm
+
+Avertissement: 
+Moi j'ai l'impression que cela marche parce que j'ai écrit deux programmes...
+MAIS
+si vous observez un comportement louche, soupçonnez un bug! 
+Tout bug rapporté vous vaudra des points en plus.
+
+     Florent
